@@ -114,17 +114,17 @@ Our first set of test cases for the system, then, will be a set of proofs that d
 assert implies-from-nand
 * ((P IMPLIES Q) NAND (P IMPLIES Q)) NAND (P NAND (Q NAND Q))
 
-    proof def-implies-from-nand
-    assert p-implies-q-in-nand (P NAND (Q NAND Q))
-    comment The above assertion is local to this proof.
-    derive p-implies-q modus-tollens p-implies-q-in-nand  implies-from-nand
+        proof def-implies-from-nand
+        assert p-implies-q-in-nand (P NAND (Q NAND Q))
+        comment The above assertion is local to this proof.
+        derive p-implies-q modus-tollens p-implies-q-in-nand  implies-from-nand
 
 assert implies-to-nand
 * ((P NAND (Q NAND Q)) NAND (P NAND (Q NAND Q))) NAND (P IMPLIES Q)
 
-    proof def-implies-to-nand
-    assert p-implies-q (P IMPLIES Q)
-    derive p-implies-q-in-nand modus-tollens p-implies-q implies-to-nand
+        proof def-implies-to-nand
+        assert p-implies-q (P IMPLIES Q)
+        derive p-implies-q-in-nand modus-tollens p-implies-q implies-to-nand
 
 We will want to prove the inference rule known as "modus ponens". From "P" and "P IMPLIES Q" we infer "Q".
 
