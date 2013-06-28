@@ -1,7 +1,7 @@
 Aaron Mansheim, 2002, following a locally printed textbook by Harlan Miller
 at Virginia Tech, 1991.
 
-Design of Logic System.txt
+Design of Logic System.md
 *   A word about design of a simple proof checker.
 
 proof.py
